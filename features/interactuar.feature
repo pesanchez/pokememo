@@ -5,5 +5,5 @@ Feature:
   
 Scenario: Debe tener el titulo "Bienvenido a Pokememo"
   Given que ingrese a la aplicacion
-  Then debo ver "Bienvenido a Pokememo"
+  Then debo ver "Bienvenido a Pokememo2"
   
