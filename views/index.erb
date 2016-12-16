@@ -3,9 +3,16 @@
         <h1 align="center">Bienvenido a Pokememo</h1>
         <script languaje="javascript">
         
-        function giro(){
+        function giro(pos,poke){
             
-            document.getElementById("img1").src = "";
+            
+            var pokemon1 = "http://www.canailleblog.com/photos/blogs/emeline5820090914200911.png";
+            var pokemon2 = "http://vignette2.wikia.nocookie.net/allspecies/images/9/9d/Kabuto_%28Pok%C3%A9mon%29.png/revision/latest?cb=20140529063413";
+            var pokemon3 = "http://i.imgur.com/DUJfas5.png";
+            var pokemon4 = "http://static.wixstatic.com/media/51b0a9_61e9162b936646398e1614c3bfcb10ac~mv2.png_256";
+            
+            
+            document.getElementById(pos).src = pokemon1;
         }
         </script>
     </head>
@@ -13,28 +20,28 @@
         <div id="contenedorTabla">
             <table id="tablaPokemon" border=1 style="text-align: center">
                 <tr>
-                    <td id="celda1"><img id="img1" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro()"></td>
-                    <td id="celda2"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda3"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda4"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
+                    <td id="celda1"><img id="imgA1" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')"></td>
+                    <td id="celda2"><img id="imgA2" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA2')"></td>
+                    <td id="celda3"><img id="imgA3" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA3')"></td>
+                    <td id="celda4"><img id="imgA4" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA4')"></td>
                 </tr>
                 <tr>
-                    <td id="celda5"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda6"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda7"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda8"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
+                    <td id="celda5"><img id="imgB1" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgB1')"></td>
+                    <td id="celda6"><img id="imgB2" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgB2')"></td>
+                    <td id="celda7"><img id="imgB3" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgB3')"></td>
+                    <td id="celda8"><img id="imgB4" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgB4')"></td>
                 </tr>
                 <tr>
-                    <td id="celda9"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda10"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda11"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda12"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
+                    <td id="celda9"><img id="imgC1" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgC1')"></td>
+                    <td id="celda10"><img id="imgC2" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgC2')"></td>
+                    <td id="celda11"><img id="imgC3" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgC3')"></td>
+                    <td id="celda12"><img id="imgC4" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgC4')"></td>
                 </tr>
-                 <tr>
-                    <td id="celda13"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda14"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda15"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
-                    <td id="celda16"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px"></td>
+                <tr>
+                    <td id="celda13"><img id="imgD1" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgD1')"></td>
+                    <td id="celda14"><img id="imgD2" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgD2')"></td>
+                    <td id="celda15"><img id="imgD3" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgD3')"></td>
+                    <td id="celda16"><img id="imgD4" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgD4')"></td>
                 </tr>
             </table>
     </div>
