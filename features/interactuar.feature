@@ -7,7 +7,7 @@ Scenario: Debe tener el titulo "Bienvenido a Pokememo"
   Given que ingrese a la aplicacion
   Then debo ver "Bienvenido a Pokememo"
 
-#Scenario: Debe mostrarse un tablero 4x4
-  #Given que ingrese a la aplicacion
-  #Then debo ver una tabla 4x4
+Scenario: Debe mostrarse una tabla
+  Given que ingrese a la aplicacion
+  Then debo ver una tabla "tablaPokemon"
   
