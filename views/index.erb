@@ -1,26 +1,23 @@
 <html>
     <head>
         <h1 align="center">Bienvenido a Pokememo</h1>
-        <script languaje="javascript">
-        
-        function giro(pos,poke){
-            
-            
-            var pokemon1 = "http://www.canailleblog.com/photos/blogs/emeline5820090914200911.png";
-            var pokemon2 = "http://vignette2.wikia.nocookie.net/allspecies/images/9/9d/Kabuto_%28Pok%C3%A9mon%29.png/revision/latest?cb=20140529063413";
-            var pokemon3 = "http://i.imgur.com/DUJfas5.png";
-            var pokemon4 = "http://static.wixstatic.com/media/51b0a9_61e9162b936646398e1614c3bfcb10ac~mv2.png_256";
-            
-            
-            document.getElementById(pos).src = pokemon1;
-        }
-        </script>
     </head>
     <body>
+        
         <div id="contenedorTabla">
             <table id="tablaPokemon" border=1 style="text-align: center">
                 <tr>
-                    <td id="celda1"><img id="imgA1" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')"></td>
+                    <td id="celda12">
+                        
+                        
+                          <%if session["pikachu"]=="2"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="pikachu" href="/click"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+        
+                    </td>
                     <td id="celda2"><img id="imgA2" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA2')"></td>
                     <td id="celda3"><img id="imgA3" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA3')"></td>
                     <td id="celda4"><img id="imgA4" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA4')"></td>

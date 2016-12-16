@@ -12,3 +12,8 @@ set :session_secret, 'thisIsAKleerSecret'
 get '/' do
 	erb :index
 end
+
+get '/click' do
+    session["pikachu"] = "2"
+	erb :index
+end
