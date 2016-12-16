@@ -21,7 +21,7 @@ Scenario: Debe mostrar la imagen de togepi
   Given que ingrese a la aplicacion
   And muestro a pikachu en "imgpikachu2"
   And hago clic en la imagen de pikachu "imgpikachu2"
-  Then debo ver la imagen togepi "imgtogepy2"
+  Then debo ver la imagen togepi "togepi"
 
 
 

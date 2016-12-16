@@ -7,38 +7,140 @@
         <div id="contenedorTabla">
             <table id="tablaPokemon" border=1 style="text-align: center">
                 <tr>
-                    <td id="celda12">
-                        
-                        
-                          <%if session["pikachu"]=="2"%>
+                    <td>
+                          <%if session["pikachu1"]=="mostrar"%>
                             <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
                          <%else%>
-                            <a id="pikachu" href="/click"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            <a id="imgpikachu1" href="/click?posicion=1"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
                             </a>
                          <%end%>
-        
                     </td>
-                    <td id="celda2"><img id="imgpikachu2" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA2')"></td>
-                    <td id="celda3"><img id="imgtogepy2" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA3')"></td>
-                    <td id="celda4"><img id="imgA4" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA4')"></td>
+                    <td>
+                        <%if session["pikachu2"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu2" href="/click?posicion=2"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                          <%if session["pikachu3"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu3" href="/click?posicion=3"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                        <%if session["pikachu4"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu4" href="/click?posicion=4"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
                 </tr>
-                <tr>
-                    <td id="celda5"><img id="imgB1" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgB1')"></td>
-                    <td id="celda6"><img id="imgB2" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgB2')"></td>
-                    <td id="celda7"><img id="imgB3" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgB3')"></td>
-                    <td id="celda8"><img id="imgB4" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgB4')"></td>
+ <tr>
+                    <td>
+                          <%if session["pikachu5"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu5" href="/click?posicion=5"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                        <%if session["pikachu6"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu6" href="/click?posicion=6"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                          <%if session["pikachu7"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu7" href="/click?posicion=7"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                        <%if session["pikachu8"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu8" href="/click?posicion=8"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
                 </tr>
-                <tr>
-                    <td id="celda9"><img id="imgC1" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgC1')"></td>
-                    <td id="celda10"><img id="imgC2" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgC2')"></td>
-                    <td id="celda11"><img id="imgC3" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgC3')"></td>
-                    <td id="celda12"><img id="imgC4" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgC4')"></td>
+<tr>
+                    <td>
+                          <%if session["pikachu9"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu9" href="/click?posicion=9"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                        <%if session["pikachu10"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu10" href="/click?posicion=10"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                          <%if session["pikachu11"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu11" href="/click?posicion=11"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                        <%if session["pikachu12"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu12" href="/click?posicion=12"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
                 </tr>
-                <tr>
-                    <td id="celda13"><img id="imgD1" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgD1')"></td>
-                    <td id="celda14"><img id="imgD2" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgD2')"></td>
-                    <td id="celda15"><img id="imgD3" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgD3')"></td>
-                    <td id="celda16"><img id="imgD4" src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgD4')"></td>
+<tr>
+                    <td>
+                          <%if session["pikachu13"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu13" href="/click?posicion=13"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                        <%if session["pikachu14"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu14" href="/click?posicion=14"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                          <%if session["pikachu15"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu15" href="/click?posicion=15"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
+                    <td>
+                        <%if session["pikachu16"]=="mostrar"%>
+                            <img id="togepi" src="http://vignette1.wikia.nocookie.net/es.pokemon/images/f/ff/Togepi.png/revision/latest?cb=20140206223753" width="100px" heigth="100px" >
+                         <%else%>
+                            <a id="imgpikachu16" href="/click?posicion=16"><img src="https://pbs.twimg.com/profile_images/478947556760645632/IwdfeL3J_400x400.png" width="100px" heigth="100px" onclick="giro('imgA1')">
+                            </a>
+                         <%end%>
+                    </td>
                 </tr>
             </table>
     </div>

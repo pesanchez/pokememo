@@ -11,11 +11,11 @@ Then(/^debo ver una tabla "([^"]*)"$/) do |tablaId|
 end
 
 Given(/^muestro a pikachu$/) do
-  expect(page).to have_xpath("//*[@id='pikachu']")
+  expect(page).to have_xpath("//*[@id='imgpikachu1']")
 end
 
 Given(/^hago clic en la imagen de pikachu$/) do
-  page.find(:xpath, "//*[@id='pikachu']").click
+  page.find(:xpath, "//*[@id='imgpikachu1']").click
 end
 
 Then(/^debo ver la imagen togepi$/) do
