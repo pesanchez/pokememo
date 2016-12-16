@@ -21,3 +21,15 @@ end
 Then(/^debo ver la imagen togepi$/) do
   expect(page).to have_xpath("//*[@id='togepi']")
 end
+
+Given(/^muestro a pikachu en "([^"]*)"$/) do |posicion|
+  expect(page).to have_xpath("//*[@id='#{posicion}']")
+end
+
+Given(/^hago clic en la imagen de pikachu "([^"]*)"$/) do |posicion|
+  page.find(:xpath, "//*[@id='#{posicion}']").click
+end
+
+Then(/^debo ver la imagen togepi "([^"]*)"$/) do |posicion|
+  expect(page).to have_xpath("//*[@id='#{posicion}']")
+end
